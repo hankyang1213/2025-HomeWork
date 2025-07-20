@@ -1,0 +1,116 @@
+/*頁首*/
+.header{
+    .logo{
+        .logo-text{
+            position: relative;
+            font-family: "Mina", sans-serif;            
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 150%;
+            letter-spacing: 0.044em;
+            text-decoration: none;
+            color:var(--color-neutral);
+            .bi-circle-fill{
+                position: absolute;
+                z-index: -1;
+                top:13px;
+                right: 10px;
+                width: 8px;
+                height: 8px;
+                color: var(--color-primary-300);
+            }        
+        }
+    }
+    .nav{
+        @media(max-width:768px){
+            display: none;
+        }
+        .page_link{
+            .arrow{
+                &:hover{
+                    opacity:0.5;
+                    transition:opacity 0.5s;
+                }
+            }            
+        }
+    }
+    .member{
+        .member-icon{
+            color: var(--color-neutral-900);
+            &:hover{
+                color: var(--color-primary-300);
+            }
+        }
+    }
+}
+/*RWD page_link*/
+.nav-rwd{
+    display: none;
+        @media(max-width:768px){
+        display: block;
+        .page_link{
+            gap:0px;
+            .arrow-left{
+                background-color: var( --color-primary-200);
+                text-align: center;
+            }
+            .arrow-right{
+                background-color: var( --color-primary-100);
+                text-align: center;
+            }
+        }
+    }    
+}
+
+.hero-section{
+    background-image: url(../image/week3-4/banner.png);
+    background-position: center;
+    background-size: cover;
+    @media screen and (max-width:768px) {
+        background-image: url(../image/week3-4/banner-sm.png);
+    }
+    .hero-section-ctn{
+        padding-top: 289px;
+        padding-bottom: 288px;
+        padding-left: 200px;
+        @media screen and (max-width:768px) {
+            padding: 155px 24px;
+            h1{
+                font-size: 48px;
+                margin-bottom: 8px;
+            }
+            h3{
+                font-size: 20px;
+                margin-bottom: 32px;
+            }
+        }
+        h1,h3{
+            color: var(--color-text-on-dark);
+        }
+        .button-style{
+            &:hover{
+                color: var(--color-primary-400);
+                transition:color 1s;
+            }
+        }
+    }
+}
+
+.main{
+    .content-title{
+        .title{
+            text-align: center;            
+        }
+    }
+}
+
+.best-seller{
+    .card{
+        position: relative;
+        .bradge{
+            position: absolute;
+            top:0px;
+            left: 0px;
+        }
+    }
+}

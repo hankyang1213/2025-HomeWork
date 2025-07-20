@@ -1,0 +1,790 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=UoqMunThenKhung&family=WDXL+Lubrifont+SC&family=Xanh+Mono:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+TC:wght@200..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=UoqMunThenKhung&family=WDXL+Lubrifont+SC&family=Xanh+Mono:ital@0;1&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+ul {
+  list-style: none;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/*頁首*/
+.header .logo .logo-text {
+  position: relative;
+  font-family: "Mina", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.044em;
+  text-decoration: none;
+  color: var(--color-neutral);
+}
+.header .logo .logo-text .bi-circle-fill {
+  position: absolute;
+  z-index: -1;
+  top: 13px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  color: var(--color-primary-300);
+}
+@media (max-width: 768px) {
+  .header .nav {
+    display: none;
+  }
+}
+.header .nav .page_link .arrow:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+.header .member .member-icon {
+  color: var(--color-neutral-900);
+}
+.header .member .member-icon:hover {
+  color: var(--color-primary-300);
+}
+
+/*RWD page_link*/
+.nav-rwd {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav-rwd {
+    display: block;
+  }
+  .nav-rwd .page_link {
+    gap: 0px;
+  }
+  .nav-rwd .page_link .arrow-left {
+    background-color: var(--color-primary-200);
+    text-align: center;
+  }
+  .nav-rwd .page_link .arrow-right {
+    background-color: var(--color-primary-100);
+    text-align: center;
+  }
+}
+
+.hero-section {
+  background-image: url(../image/week3-4/banner.png);
+  background-position: center;
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .hero-section {
+    background-image: url(../image/week3-4/banner-sm.png);
+  }
+}
+.hero-section .hero-section-ctn {
+  padding-top: 289px;
+  padding-bottom: 288px;
+  padding-left: 200px;
+}
+@media screen and (max-width: 768px) {
+  .hero-section .hero-section-ctn {
+    padding: 155px 24px;
+  }
+  .hero-section .hero-section-ctn h1 {
+    font-size: 48px;
+    margin-bottom: 8px;
+  }
+  .hero-section .hero-section-ctn h3 {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+}
+.hero-section .hero-section-ctn h1, .hero-section .hero-section-ctn h3 {
+  color: var(--color-text-on-dark);
+}
+.hero-section .hero-section-ctn .button-style:hover {
+  color: var(--color-primary-400);
+  transition: color 1s;
+}
+
+.main .content-title .title {
+  text-align: center;
+}
+
+.best-seller .card {
+  position: relative;
+}
+.best-seller .card .bradge {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+:root {
+  /* Primary 色階 */
+  --color-primary-100: #f5fee7;
+  --color-primary-200: #e8f6c5;
+  --color-primary-300: #c0fa73;
+  --color-primary-400: #57a203;
+  --color-primary-500: #477a11;
+  /* Neutral 色階 */
+  --color-neutral-0: #ffffff;
+  --color-neutral-100: #f9f9fa;
+  --color-neutral-200: #f3f4f6;
+  --color-neutral-300: #e4e6ef;
+  --color-neutral-400: #ced4da;
+  --color-neutral-500: #adb5bd;
+  --color-neutral-600: #6c757d;
+  --color-neutral-700: #495057;
+  --color-neutral-800: #343a40;
+  --color-neutral-900: #212529;
+  /* Functional 色階 */
+  --color-danger-100: #fcf1f1;
+  --color-danger-200: #eba7a7;
+  --color-danger-300: #e86c6f;
+  --color-success-100: #f8fff4;
+  --color-success-200: #9ad1ba;
+  --color-success-300: #36a375;
+  --color-warning-100: #fff6ec;
+  --color-warning-200: #f9c588;
+  --color-warning-300: #f3b812;
+  --color-info-100: #eff5fc;
+  --color-info-200: #97c3ed;
+  --color-info-300: #3087db;
+  /* Text */
+  --color-text-primary: #212529; /* Neutral/900 */
+  --color-text-secondary: #6c757d; /* Neutral/600 */
+  --color-text-muted: #adb5bd; /* Neutral/500 */
+  --color-text-highlight: #c0fa73; /* Primary/300 */
+  --color-text-on-dark: #ffffff; /* Neutral/White */
+}
+
+/* Display */
+.display-1 {
+  font-size: 64px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  font-weight: 700; /* Bold */
+}
+
+.display-2 {
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  font-weight: 700; /* Bold */
+}
+
+/* Headings */
+.tw-heading-h1 {
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  font-weight: 700; /* Bold */
+}
+
+.tw-heading-h2 {
+  font-size: 32px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  font-weight: 700; /* Bold */
+}
+
+.tw-heading-h3 {
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  font-weight: 700; /* Bold */
+}
+
+.tw-heading-h4 {
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  font-weight: 700; /* Bold */
+}
+
+.tw-heading-h5 {
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  font-weight: 700; /* Bold */
+}
+
+.tw-heading-h6 {
+  font-size: 16px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  font-weight: 700; /* Bold */
+}
+
+/* Labels */
+.tw-label-lg {
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  font-weight: 500; /* Medium */
+}
+
+.tw-label-md {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  font-weight: 500; /* Medium */
+}
+
+.tw-label-sm {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  font-weight: 500; /* Medium */
+}
+
+.tw-label-xs {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  font-weight: 500; /* Medium */
+}
+
+/* Paragraphs */
+.tw-paragraph-lg {
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  font-weight: 400; /* Regular */
+}
+
+.tw-paragraph-md {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  font-weight: 400; /* Regular */
+}
+
+.tw-paragraph-sm {
+  font-size: 14px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  font-weight: 400; /* Regular */
+}
+
+.tw-paragraph-xs {
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  font-weight: 400; /* Regular */
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  /*outline: solid 1px;*/
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--color-text-primary);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0px;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.button-style {
+  padding: 12px 24px;
+  background-color: var(--color-primary-300);
+  border-radius: 8px;
+}
+
+.bradge-style {
+  padding: 8px 12px;
+  background-color: var(--color-primary-100);
+}
+
+/*統用格式*/
+.d-f {
+  display: flex;
+  align-items: center;
+}
+
+.f-w {
+  flex-wrap: wrap;
+}
+
+.d-b {
+  display: block;
+}
+
+.align-items-c {
+  align-items: center;
+}
+
+.gap-48 {
+  gap: 48px;
+}
+
+.gap-40 {
+  gap: 40px;
+}
+
+.my-12 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.mx-40 {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.mx--12 {
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.me-48 {
+  margin-left: 48px;
+}
+
+.me-a {
+  margin-left: auto;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.md-40 {
+  margin-bottom: 40px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.px-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.py-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+/*網格*/
+.col-md-2 {
+  width: 50%;
+}
+
+.col-6 {
+  width: 50%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.col-3 {
+  width: 25%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/*統用格式-RWD*/
+@media screen and (max-width: 768px) {
+  .py-md-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+  .px-md-6 {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+  .mx-md--12 {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+  .md-md-40 {
+    margin-bottom: 40px;
+  }
+  .fz-md-16 {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=all.css.map */

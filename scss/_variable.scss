@@ -1,0 +1,189 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+    /*outline: solid 1px;*/
+}
+
+body{
+    font-family:"Noto Sans TC", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    color:var(--color-text-primary);
+}
+
+img{
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+a{
+    display: inline-block;
+    text-decoration: none;    
+}
+
+ul{
+    margin: 0px;
+}
+
+.container{
+    max-width: 1296px;
+    margin: 0 auto;    
+    @media (max-width:768px) {
+        padding-left: 12px;        
+        padding-right: 12px;
+    }
+}
+
+.button-style{
+    padding: 12px 24px;    
+    background-color: var(--color-primary-300);
+    border-radius: 8px;
+}
+
+.bradge-style{
+    padding: 8px 12px;
+    background-color: var(--color-primary-100);
+
+}
+
+/*統用格式*/
+.d-f{
+    display: flex;
+    align-items: center;
+}
+
+.f-w{
+    flex-wrap: wrap;
+}
+
+.d-b{
+    display: block;
+}
+
+.align-items-c{
+    align-items: center;
+}
+
+.gap-48{
+    gap:48px;
+}
+
+.gap-40{
+    gap:40px;
+}
+
+.my-12{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.mx-40{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.mx--12{
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.me-48{
+    margin-left: 48px;
+}
+
+.me-a{
+    margin-left: auto;
+}
+
+.mb-4{
+    margin-bottom: 4px;
+}
+
+.mb-12{
+    margin-bottom: 12px;
+}
+
+.mb-16{
+    margin-bottom: 16px;
+}
+
+.mb-32{
+    margin-bottom: 32px;
+}
+
+.md-40{
+    margin-bottom: 40px;
+}
+
+.mb-48{
+    margin-bottom: 48px;
+}
+
+.mb-64{
+    margin-bottom: 64px;
+}
+
+.p-15{
+    padding: 15px;
+}
+
+.px-12{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.py-8{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.py-12{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.py-16{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+/*網格*/
+.col-md-2{
+    width: 50%;  
+}
+
+.col-6{
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.col-3{
+    width:25%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+/*統用格式-RWD*/
+
+@media screen and (max-width:768px) {
+    .py-md-12{
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    
+    .px-md-6{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+        .mx-md--12{
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+    
+        .md-md-40{
+            margin-bottom: 40px;
+    }
+        .fz-md-16{
+            font-size: 16px;
+        }
+}

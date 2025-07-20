@@ -1,0 +1,44 @@
+:root {
+  /* Primary 色階 */
+  --color-primary-100: #f5fee7;
+  --color-primary-200: #e8f6c5;
+  --color-primary-300: #c0fa73;
+  --color-primary-400: #57a203;
+  --color-primary-500: #477a11;
+
+  /* Neutral 色階 */
+  --color-neutral-0:   #ffffff;
+  --color-neutral-100: #f9f9fa;
+  --color-neutral-200: #f3f4f6;
+  --color-neutral-300: #e4e6ef;
+  --color-neutral-400: #ced4da;
+  --color-neutral-500: #adb5bd;
+  --color-neutral-600: #6c757d;
+  --color-neutral-700: #495057;
+  --color-neutral-800: #343a40;
+  --color-neutral-900: #212529;
+
+  /* Functional 色階 */
+  --color-danger-100: #fcf1f1;
+  --color-danger-200: #eba7a7;
+  --color-danger-300: #e86c6f;
+
+  --color-success-100: #f8fff4;
+  --color-success-200: #9ad1ba;
+  --color-success-300: #36a375;
+
+  --color-warning-100: #fff6ec;
+  --color-warning-200: #f9c588;
+  --color-warning-300: #f3b812;
+
+  --color-info-100: #eff5fc;
+  --color-info-200: #97c3ed;
+  --color-info-300: #3087db;
+
+  /* Text */
+  --color-text-primary: #212529;    /* Neutral/900 */
+  --color-text-secondary: #6c757d;  /* Neutral/600 */
+  --color-text-muted: #adb5bd;      /* Neutral/500 */
+  --color-text-highlight: #c0fa73;  /* Primary/300 */
+  --color-text-on-dark: #ffffff;    /* Neutral/White */
+}
