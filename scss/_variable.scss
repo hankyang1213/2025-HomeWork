@@ -47,6 +47,15 @@ ul{
 }
 
 /*統用格式*/
+
+.text-c-1{
+    color: var(--color-text-on-dark);
+}
+
+.text-c-2{
+    color: var(--color-primary-300);
+}
+
 .d-f{
     display: flex;
     align-items: center;
@@ -64,6 +73,10 @@ ul{
     align-items: center;
 }
 
+.text-align-c{
+    text-align: center;
+}
+
 .gap-48{
     gap:48px;
 }
@@ -75,6 +88,26 @@ ul{
 .my-12{
     margin-top: 12px;
     margin-bottom: 12px;
+}
+
+.my-64{
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.my-100{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.mx-a{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mx-24{
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .mx-40{
@@ -145,6 +178,11 @@ ul{
 .py-16{
     padding-top: 16px;
     padding-bottom: 16px;
+}
+
+.py-100{
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 /*網格*/
