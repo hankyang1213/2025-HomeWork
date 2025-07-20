@@ -119,7 +119,33 @@
     background-image: url(../image/week3-4/banner-co-branded.png);
     background-position: center;
     background-size: cover;
-    .sale-content{
+    .button-style{
+        &:hover{
+            color: var(--color-primary-400);
+            transition:color 1s;
+        }
+    }
+}
 
+.series{
+    .card-wrapper{
+        .card{
+            position: relative;
+            img{
+                filter: brightness(60%);
+            }
+            .label{
+                width: 100%;
+                position: absolute;
+                top:50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 999;
+                span:hover{
+                    color: #C0FF6A;
+                    transition:color 0.8s;
+                }
+            }
+        }
     }
 }

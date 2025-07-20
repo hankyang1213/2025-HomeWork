@@ -449,6 +449,30 @@ template {
   background-position: center;
   background-size: cover;
 }
+.sale .button-style:hover {
+  color: var(--color-primary-400);
+  transition: color 1s;
+}
+
+.series .card-wrapper .card {
+  position: relative;
+}
+.series .card-wrapper .card img {
+  filter: brightness(60%);
+}
+.series .card-wrapper .card .label {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.series .card-wrapper .card .label span:hover {
+  color: #C0FF6A;
+  transition: color 0.8s;
+}
+
 :root {
   /* Primary 色階 */
   --color-primary-100: #f5fee7;
@@ -663,6 +687,18 @@ ul {
   color: var(--color-primary-300);
 }
 
+.text-c-3 {
+  color: var(--color-neutral-500);
+}
+
+.text-c-4 {
+  color: var(--color-neutral-900);
+}
+
+.text-c-5 {
+  color: var(--color-primary-400);
+}
+
 .d-f {
   display: flex;
   align-items: center;
@@ -674,6 +710,10 @@ ul {
 
 .d-b {
   display: block;
+}
+
+.d-n {
+  display: none;
 }
 
 .align-items-c {
@@ -695,6 +735,11 @@ ul {
 .my-12 {
   margin-top: 12px;
   margin-bottom: 12px;
+}
+
+.my-48 {
+  margin-top: 48px;
+  margin-bottom: 48px;
 }
 
 .my-64 {
@@ -739,6 +784,10 @@ ul {
   margin-bottom: 4px;
 }
 
+.mb-8 {
+  margin-bottom: 8px;
+}
+
 .mb-12 {
   margin-bottom: 12px;
 }
@@ -747,11 +796,15 @@ ul {
   margin-bottom: 16px;
 }
 
+.mb-21 {
+  margin-bottom: 21px;
+}
+
 .mb-32 {
   margin-bottom: 32px;
 }
 
-.md-40 {
+.mb-40 {
   margin-bottom: 40px;
 }
 
@@ -811,22 +864,66 @@ ul {
 
 /*統用格式-RWD*/
 @media screen and (max-width: 768px) {
+  .d-b-md {
+    display: block;
+  }
+  .d-n-md {
+    display: none;
+  }
+  .f-md-w {
+    flex-wrap: wrap;
+  }
   .py-md-12 {
     padding-top: 12px;
     padding-bottom: 12px;
+  }
+  .py-md-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
   .px-md-6 {
     padding-left: 6px;
     padding-right: 6px;
   }
+  .my-md-8 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
   .mx-md--12 {
     margin-left: -6px;
     margin-right: -6px;
   }
-  .md-md-40 {
+  .mx-md-64 {
+    margin-left: 64px;
+    margin-right: 64px;
+  }
+  .mb-md-12 {
+    margin-bottom: 12px;
+  }
+  .mb-md-24 {
+    margin-bottom: 24px;
+  }
+  .mb-md-32 {
+    margin-bottom: 32px;
+  }
+  .mb-md-40 {
     margin-bottom: 40px;
   }
   .fz-md-16 {
     font-size: 16px;
+  }
+  .fz-md-20 {
+    font-size: 20px;
+  }
+  .fz-md-28 {
+    font-size: 28px;
+  }
+  .fz-md-32 {
+    font-size: 32px;
+  }
+  .col-md-2 {
+    width: 50%;
+    padding-left: 6px;
+    padding-right: 6px;
   }
 }/*# sourceMappingURL=all.css.map */
