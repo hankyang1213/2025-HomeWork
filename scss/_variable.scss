@@ -47,10 +47,16 @@ ul{
 }
 
 /*統用格式*/
+
+/*樣式設置*/
 .w-50{
     width: 50%;
 }
+.border-t{
+    border-top: 1px solid var(--color-neutral-300);
+}
 
+/*顏色設置*/
 .text-c-1{
     color: var(--color-text-on-dark);
 }
@@ -71,6 +77,10 @@ ul{
     color:var(--color-primary-400);
 }
 
+.bg-c-1{
+    background-color:var(--color-neutral-900);
+}
+
 .d-f{
     display: flex;
     align-items: center;
@@ -83,6 +93,11 @@ ul{
 .j-c-s-b{
     justify-content: space-between;
 }
+
+.j-c-s-c{
+    justify-content: center;
+}
+
 .j-c-s-s{
     justify-content: start;
 }
@@ -98,6 +113,10 @@ ul{
 
 .d-n{
     display: none;
+}
+
+.d-i{
+    display: inline;
 }
 
 .align-items-c{
@@ -164,8 +183,24 @@ ul{
     margin-left: 48px;
 }
 
+.mt-48{
+    margin-top: 48px;
+}
+
+.mt-64{
+    margin-top: 64px;
+}
+
+.me-24{
+    margin-left: 24px;
+}
+
 .me-a{
     margin-left: auto;
+}
+
+.mr-24{
+    margin-right: 24px;
 }
 
 .mb-4{
@@ -238,9 +273,27 @@ ul{
     padding-bottom: 16px;
 }
 
+.py-24{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.py-64{
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
 .py-100{
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.pt-48{
+    padding-top: 48px;
+}
+
+.pt-32{
+    padding-top: 32px;
 }
 
 /*網格*/
@@ -270,20 +323,40 @@ ul{
 /*統用格式-RWD*/
 
 @media screen and (max-width:768px) {
+    .gap-md-0{
+        gap:0px;
+    }
+
     .d-b-md{
         display: block;
     }
     .d-n-md{
         display: none;
     }
-
+    .f-d-md-c{
+        flex-direction: column;
+    }
     .f-md-w{
         flex-wrap: wrap;
     }
+    .j-c-md-s{
+        justify-content: start;
+    }
+    .a-i-md-s{
+        align-items: flex-start;
+    }
 
+    .pt-md-40{
+        padding-top: 40px;
+        padding-bottom: 0px;  
+    }
     .py-md-12{
         padding-top: 12px;
         padding-bottom: 12px;
+    }
+    .py-md-40{
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
     .py-md-64{
         padding-top: 64px;
@@ -293,7 +366,17 @@ ul{
         padding-left: 6px;
         padding-right: 6px;
     }
-
+    .px-md-12{
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .pt-md-24{
+        padding-top: 24px;
+    }
+    .mu-md-0{
+        margin-top: 0px;
+        margin-bottom: 0px;  
+    }
     .my-md-8{
         margin-top: 8px;
         margin-bottom: 8px;
@@ -317,6 +400,10 @@ ul{
     }
     .mb-md-40{
         margin-bottom: 40px;
+    }
+
+    .mt-md-32{
+        margin-top: 32px;
     }
 
     .fz-md-16{
