@@ -12,7 +12,7 @@ body{
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
     vertical-align: middle;
 }
@@ -47,6 +47,9 @@ ul{
 }
 
 /*統用格式*/
+.w-50{
+    width: 50%;
+}
 
 .text-c-1{
     color: var(--color-text-on-dark);
@@ -73,6 +76,18 @@ ul{
     align-items: center;
 }
 
+.f-d-c{
+    flex-direction: column;
+}
+
+.j-c-s-b{
+    justify-content: space-between;
+}
+.j-c-s-s{
+    justify-content: start;
+}
+
+
 .f-w{
     flex-wrap: wrap;
 }
@@ -91,6 +106,10 @@ ul{
 
 .text-align-c{
     text-align: center;
+}
+
+.gpa-8{
+    gap: 8px;
 }
 
 .gap-48{
@@ -189,9 +208,19 @@ ul{
     padding: 15px;
 }
 
+.px-4{
+    padding-left: 4%;
+    padding-right: 4px;
+}
+
 .px-12{
     padding-left: 12px;
     padding-right: 12px;
+}
+
+.px--4{
+    padding-left: -4px;
+    padding-right: -4px;
 }
 
 .py-8{
@@ -224,11 +253,20 @@ ul{
     padding-left: 12px;
     padding-right: 12px;
 }
+.col-6-px-8{
+    width: 50%;
+    padding-left: 4px;
+    padding-right: 4px;
+}
 .col-3{
     width:25%;
     padding-left: 12px;
     padding-right: 12px;
 }
+.col-4{
+    width:33%;
+}
+
 /*統用格式-RWD*/
 
 @media screen and (max-width:768px) {
