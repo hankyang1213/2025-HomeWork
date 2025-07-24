@@ -33,6 +33,11 @@ ul{
     padding-right: 12px;
 }
 
+.about-container{
+    max-width: 1076px;
+    margin: 0 auto;
+}
+
 .button-style{
     padding: 12px 24px;    
     background-color: var(--color-primary-300);
@@ -72,6 +77,14 @@ ul{
     border-bottom: 1px solid var(--color-neutral-300);
 }
 
+.border-b-p{
+    border-bottom: 1px solid var(--color-primary-400);
+}
+
+.border-e{
+    border-left: 1px solid var(--color-neutral-300);
+}
+
 .border{
     border: 1px solid var(--color-neutral-300);
 }
@@ -83,6 +96,7 @@ ul{
 .opacity-40{
     opacity: 40%;
 }
+
 
 /*顏色設置*/
 .text-c-1{
@@ -115,6 +129,9 @@ ul{
 
 .bg-c-1{
     background-color:var(--color-neutral-900);
+}
+.bg-c-2{
+    background-color:var(--color-primary-100);
 }
 
 .d-f{
@@ -252,8 +269,17 @@ ul{
     margin-left: auto;
 }
 
+.mx-a{
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .mr-24{
     margin-right: 24px;
+}
+
+.mr-4{
+    margin-right: 4px;
 }
 
 .mb-4{
@@ -358,6 +384,11 @@ ul{
     padding-bottom: 24px;
 }
 
+.py-32{
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .py-48{
     padding-top: 48px;
     padding-bottom: 48px;
@@ -373,6 +404,11 @@ ul{
     padding-bottom: 100px;
 }
 
+.py-151{
+    padding-top: 151px;
+    padding-bottom: 151px;
+}
+
 .pt-48{
     padding-top: 48px;
 }
@@ -385,12 +421,20 @@ ul{
     padding-left: 12px;
 }
 
+.pe-8{
+    padding-left: 8px;
+}
+
 .pr-12{
     padding-right: 12px;
 }
 .pb-29{
     padding-bottom: 29px;
 }
+.pb-4{
+    padding-bottom: 4px;
+}
+
 
 /*網格*/
 .col-md-2{
@@ -402,7 +446,7 @@ ul{
     padding-right: 4px;
 }
 .col-2{
-    width: 16.66%;
+    width: 16.67%;
 }
 
 .col-5{
@@ -434,8 +478,12 @@ ul{
     padding-right: 12px;
 }
 
+.col-8{
+    width:66.67%;
+}
+
 .col-10{
-    width: 83.33%;
+    width:83.33%;
 }
 
 .col-12{
@@ -473,6 +521,13 @@ ul{
         align-items: flex-start;
     }
 
+    .t-a-j{
+        text-align:justify
+    }
+
+    .p-24{
+        padding: 24px;
+    }
     .pt-md-40{
         padding-top: 40px;
         padding-bottom: 0px;  
@@ -480,6 +535,10 @@ ul{
     .py-md-12{
         padding-top: 12px;
         padding-bottom: 12px;
+    }
+    .py-md-24{
+        padding-top: 24px;
+        padding-bottom: 24px;
     }
     .py-md-40{
         padding-top: 40px;
@@ -497,7 +556,10 @@ ul{
         padding-left: 12px;
         padding-right: 12px;
     }
-
+    .px-md-24{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
     .px-md-0{
         padding-left: 0;
         padding-right: 0;
@@ -514,6 +576,12 @@ ul{
         margin-top: 8px;
         margin-bottom: 8px;
     }
+
+    .my-md-32{
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
     .mx-md--6{
         margin-left: -6px;
         margin-right: -6px;
@@ -533,6 +601,9 @@ ul{
     }
     .mb-md-40{
         margin-bottom: 40px;
+    }
+    .mr-md-16{
+        margin-right: 16px;
     }
 
     .mt-md-32{
@@ -559,6 +630,6 @@ ul{
     }
 
     .col-md-4{
-    width: 100%;
-}
+        width: 100%;
+    }
 }
