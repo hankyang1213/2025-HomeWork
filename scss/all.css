@@ -597,6 +597,166 @@ template {
   transition: opacity 0.5s;
 }
 
+/*頁首*/
+.header .logo .logo-text {
+  position: relative;
+  font-family: "Mina", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.044em;
+  text-decoration: none;
+  color: var(--color-neutral);
+}
+.header .logo .logo-text .bi-circle-fill {
+  position: absolute;
+  z-index: -1;
+  top: 13px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  color: var(--color-primary-300);
+}
+@media (max-width: 768px) {
+  .header .header-nav {
+    display: none;
+  }
+}
+.header .header-nav .page_link .arrow:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+.header .member .member-icon {
+  color: var(--color-neutral-900);
+}
+.header .member .member-icon:hover {
+  color: var(--color-primary-300);
+}
+
+/*RWD page_link*/
+.nav-rwd {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav-rwd {
+    display: block;
+  }
+  .nav-rwd .page_link {
+    gap: 0px;
+  }
+  .nav-rwd .page_link .arrow-left {
+    background-color: var(--color-primary-200);
+    text-align: center;
+  }
+  .nav-rwd .page_link .arrow-right {
+    background-color: var(--color-primary-100);
+    text-align: center;
+  }
+}
+
+.main .spec-cta .option-card:hover img {
+  filter: contrast(1.1);
+  transition: filter 0.5s;
+}
+.main .spec-cta .option-card:focus img {
+  border: 1px solid var(--color-neutral-900);
+}
+.main .spec-cta .option-card:focus .text {
+  color: var(--color-neutral-900);
+}
+.main .spec-cta .btn-size-wrapper {
+  position: relative;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 160px 160px 160px;
+  grid-template-rows: 1fr 1fr;
+}
+@media screen and (max-width: 768px) {
+  .main .spec-cta .btn-size-wrapper {
+    grid-template-columns: 160px 160px;
+  }
+}
+.main .spec-cta .btn-size-wrapper .optiot:hover .hint-quantity {
+  display: block;
+}
+.main .spec-cta .btn-size-wrapper .size-text:hover {
+  border-color: var(--color-neutral-600);
+}
+.main .spec-cta .btn-size-wrapper .size-text:focus {
+  border-color: var(--color-neutral-600);
+}
+.main .spec-cta .btn-size-wrapper .hint-quantity {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.main .spec-cta .btn-wrapper .wrapper {
+  border: 1px solid var(--color-neutral-900);
+  border-radius: 4px;
+  gap: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .main .spec-cta .btn-wrapper .btn-left {
+    display: none;
+  }
+}
+.main .spec-cta .btn-wrapper .btn-left:hover {
+  background-color: var(--color-neutral-900);
+  color: var(--color-neutral-0);
+}
+.main .spec-cta .btn-wrapper .btn-right {
+  background-color: var(--color-neutral-900);
+}
+@media screen and (max-width: 768px) {
+  .main .spec-cta .btn-wrapper .btn-right {
+    width: 100%;
+  }
+}
+.main .spec-cta .btn-wrapper .btn-right:hover {
+  opacity: 0.5;
+}
+.main .spec-cta .btn-wrapper .btn-heart {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .main .spec-cta .btn-wrapper .btn-heart {
+    width: 0;
+    display: block;
+    border: 0px;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.best-seller .card {
+  position: relative;
+}
+.best-seller .card .bradge {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.best-seller .card img:hover {
+  filter: contrast(0.9);
+  transition: filter 0.5s;
+}
+
+.call-to-action .call-content {
+  background-color: var(--color-primary-200);
+}
+.call-to-action .call-content .button-style:hover {
+  background-color: var(--color-neutral-500);
+  transition: background-color 1s;
+}
+
+.footer .footer-nav .page_link .arrow:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
 :root {
   /* Primary 色階 */
   --color-primary-100: #f5fee7;
@@ -772,8 +932,9 @@ img {
 }
 
 a {
-  display: inline-block;
+  display: block;
   text-decoration: none;
+  color: var(--color-neutral-900);
 }
 
 ul {
@@ -804,8 +965,36 @@ ul {
   width: 50%;
 }
 
+.w-100 {
+  max-width: 100%;
+}
+
+.w-64 {
+  width: 64px;
+}
+
+.t-d-l-t {
+  text-decoration: line-through;
+}
+
 .border-t {
   border-top: 1px solid var(--color-neutral-300);
+}
+
+.border-b {
+  border-bottom: 1px solid var(--color-neutral-300);
+}
+
+.border {
+  border: 1px solid var(--color-neutral-300);
+}
+
+.border-r-8 {
+  border-radius: 8px;
+}
+
+.opacity-40 {
+  opacity: 40%;
 }
 
 /*顏色設置*/
@@ -831,6 +1020,10 @@ ul {
 
 .text-c-6 {
   color: var(--color-neutral-600);
+}
+
+.text-c-7 {
+  color: var(--color-danger-300);
 }
 
 .bg-c-1 {
@@ -871,6 +1064,10 @@ ul {
 
 .d-i {
   display: inline;
+}
+
+.d-i-b {
+  display: inline-block;
 }
 
 .align-items-c {
@@ -928,6 +1125,11 @@ ul {
   margin-right: 40px;
 }
 
+.mx--4 {
+  margin-left: -4px;
+  margin-right: -4px;
+}
+
 .mx--12 {
   margin-left: -12px;
   margin-right: -12px;
@@ -935,6 +1137,10 @@ ul {
 
 .me-48 {
   margin-left: 48px;
+}
+
+.mt-4 {
+  margin-top: 4px;
 }
 
 .mt-32 {
@@ -989,6 +1195,10 @@ ul {
   margin-bottom: 32px;
 }
 
+.mb-32 {
+  margin-bottom: 32px;
+}
+
 .mb-36 {
   margin-bottom: 36px;
 }
@@ -1029,6 +1239,11 @@ ul {
   padding-right: -12px;
 }
 
+.px-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
 .px--4 {
   padding-left: -4px;
   padding-right: -4px;
@@ -1052,6 +1267,11 @@ ul {
 .py-24 {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.py-48 {
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .py-64 {
@@ -1080,19 +1300,37 @@ ul {
   padding-right: 12px;
 }
 
+.pb-29 {
+  padding-bottom: 29px;
+}
+
 /*網格*/
 .col-md-2 {
   width: 50%;
+}
+
+.col-1 {
+  width: 20%;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 .col-2 {
   width: 16.66%;
 }
 
+.col-5 {
+  width: 41.66%;
+}
+
 .col-6 {
   width: 50%;
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.col-7 {
+  width: 58.33%;
 }
 
 .col-6-px-8 {
@@ -1119,6 +1357,12 @@ ul {
 
 .col-12 {
   width: 100%;
+}
+
+/*測試*/
+.test {
+  height: 500px;
+  border: 1px solid var(--color-neutral-900);
 }
 
 /*統用格式-RWD*/
@@ -1167,6 +1411,10 @@ ul {
   .px-md-12 {
     padding-left: 12px;
     padding-right: 12px;
+  }
+  .px-md-0 {
+    padding-left: 0;
+    padding-right: 0;
   }
   .pt-md-24 {
     padding-top: 24px;

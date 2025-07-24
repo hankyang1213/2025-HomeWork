@@ -17,8 +17,9 @@ img{
     vertical-align: middle;
 }
 a{
-    display: inline-block;
-    text-decoration: none;    
+    display: block;
+    text-decoration: none;
+    color: var(--color-neutral-900);  
 }
 
 ul{
@@ -50,9 +51,39 @@ ul{
 .w-50{
     width: 50%;
 }
+
+.w-100{
+    max-width:100%;
+}
+
+.w-64{
+    width: 64px;
+}
+
+.t-d-l-t{
+    text-decoration: line-through;
+}
+
 .border-t{
     border-top: 1px solid var(--color-neutral-300);
 }
+
+.border-b{
+    border-bottom: 1px solid var(--color-neutral-300);
+}
+
+.border{
+    border: 1px solid var(--color-neutral-300);
+}
+
+.border-r-8{
+    border-radius: 8px;
+}
+
+.opacity-40{
+    opacity: 40%;
+}
+
 /*顏色設置*/
 .text-c-1{
     color: var(--color-text-on-dark);
@@ -76,6 +107,10 @@ ul{
 
 .text-c-6{
     color:var(--color-neutral-600);
+}
+
+.text-c-7{
+    color:var(--color-danger-300);
 }
 
 .bg-c-1{
@@ -117,6 +152,10 @@ ul{
 
 .d-i{
     display: inline;
+}
+
+.d-i-b{
+    display: inline-block;
 }
 
 .align-items-c{
@@ -174,6 +213,12 @@ ul{
     margin-right: 40px;
 }
 
+.mx--4{
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+
 .mx--12{
     margin-left: -12px;
     margin-right: -12px;
@@ -181,6 +226,10 @@ ul{
 
 .me-48{
     margin-left: 48px;
+}
+
+.mt-4{
+    margin-top: 4px;
 }
 
 .mt-32{
@@ -235,6 +284,10 @@ ul{
     margin-bottom: 32px;
 }
 
+.mb-32{
+    margin-bottom: 32px;
+}
+
 .mb-36{
     margin-bottom: 36px;
 }
@@ -275,6 +328,11 @@ ul{
     padding-right: -12px;
 }
 
+.px-24{
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
 .px--4{
     padding-left: -4px;
     padding-right: -4px;
@@ -298,6 +356,11 @@ ul{
 .py-24{
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+.py-48{
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
 .py-64{
@@ -325,14 +388,25 @@ ul{
 .pr-12{
     padding-right: 12px;
 }
+.pb-29{
+    padding-bottom: 29px;
+}
 
 /*網格*/
 .col-md-2{
     width: 50%;  
 }
-
+.col-1{
+    width: 20%;
+    padding-left: 4px;
+    padding-right: 4px;
+}
 .col-2{
     width: 16.66%;
+}
+
+.col-5{
+    width: 41.66%;
 }
 
 .col-6{
@@ -340,6 +414,10 @@ ul{
     padding-left: 12px;
     padding-right: 12px;
 }
+.col-7{
+    width: 58.33%;
+}
+
 .col-6-px-8{
     width: 50%;
     padding-left: 4px;
@@ -362,6 +440,11 @@ ul{
 
 .col-12{
     width: 100%;
+}
+/*測試*/
+.test{
+    height: 500px;    
+    border: 1px solid var(--color-neutral-900);
 }
 
 /*統用格式-RWD*/
@@ -414,6 +497,12 @@ ul{
         padding-left: 12px;
         padding-right: 12px;
     }
+
+    .px-md-0{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
     .pt-md-24{
         padding-top: 24px;
     }
