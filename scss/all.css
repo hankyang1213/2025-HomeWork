@@ -341,6 +341,7 @@ template {
 /*頁首*/
 .header .logo .logo-text {
   position: relative;
+  z-index: 1;
   font-family: "Mina", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -517,6 +518,7 @@ template {
 /*頁首*/
 .header .logo .logo-text {
   position: relative;
+  z-index: 1;
   font-family: "Mina", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -600,6 +602,7 @@ template {
 /*頁首*/
 .header .logo .logo-text {
   position: relative;
+  z-index: 1;
   font-family: "Mina", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -760,6 +763,7 @@ template {
 /*頁首*/
 .header .logo .logo-text {
   position: relative;
+  z-index: 1;
   font-family: "Mina", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -833,6 +837,7 @@ template {
 /*頁首*/
 .header .logo .logo-text {
   position: relative;
+  z-index: 1;
   font-family: "Mina", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -894,6 +899,7 @@ template {
 /*頁首*/
 .header .logo .logo-text {
   position: relative;
+  z-index: 1;
   font-family: "Mina", sans-serif;
   font-size: 20px;
   font-weight: 700;
@@ -1299,6 +1305,10 @@ ul {
 
 .bg-c-3 {
   background-color: var(--color-primary-300);
+}
+
+.bg-c-4 {
+  background-color: var(--color-neutral-100);
 }
 
 .d-f {
@@ -1739,6 +1749,10 @@ ul {
   .py-md-24 {
     padding-top: 24px;
     padding-bottom: 24px;
+  }
+  .py-md-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
   .py-md-40 {
     padding-top: 40px;
