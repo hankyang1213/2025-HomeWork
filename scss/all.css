@@ -891,6 +891,110 @@ template {
   transition: opacity 0.5s;
 }
 
+/*頁首*/
+.header .logo .logo-text {
+  position: relative;
+  font-family: "Mina", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.044em;
+  text-decoration: none;
+  color: var(--color-neutral);
+}
+.header .logo .logo-text .bi-circle-fill {
+  position: absolute;
+  z-index: -1;
+  top: 13px;
+  right: 10px;
+  width: 8px;
+  height: 8px;
+  color: var(--color-primary-300);
+}
+@media (max-width: 768px) {
+  .header .header-nav {
+    display: none;
+  }
+}
+.header .header-nav .page_link .arrow:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+.header .member .member-icon {
+  color: var(--color-neutral-900);
+}
+.header .member .member-icon:hover {
+  color: var(--color-primary-300);
+}
+
+@media screen and (max-width: 765px) {
+  .main .banner-image .image {
+    display: none;
+  }
+}
+.main .banner-image .image-rwd {
+  display: none;
+}
+@media screen and (max-width: 765px) {
+  .main .banner-image .image-rwd {
+    display: block;
+  }
+}
+.main .login-content {
+  background-image: url(../image/login-bg.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 12px;
+  padding: 120px 80px;
+}
+@media screen and (max-width: 768px) {
+  .main .login-content {
+    border-radius: 0px;
+    background-image: none;
+    padding: 32px;
+  }
+}
+.main .login-content .tab:hover {
+  color: var(--color-neutral-900);
+  border-color: var(--color-neutral-900);
+}
+.main .login-content .tab:focus {
+  color: var(--color-neutral-900);
+  border-color: var(--color-neutral-900);
+}
+.main .login-content .login-style .facebook {
+  padding: 12.9px;
+  background-color: var(--color-neutral-0);
+}
+.main .login-content .login-style .facebook .text {
+  margin-left: 12px;
+}
+
+.cart .product-info .image {
+  width: 120px;
+  height: 120px;
+}
+.cart .button .lable {
+  background-color: var(--color-neutral-900);
+  border-radius: 4px;
+  color: var(--color-neutral-100);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.call-to-action .call-content {
+  background-color: var(--color-primary-200);
+}
+.call-to-action .call-content .button-style:hover {
+  background-color: var(--color-neutral-500);
+  transition: background-color 1s;
+}
+
+.footer .footer-nav .page_link .arrow:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
 :root {
   /* Primary 色階 */
   --color-primary-100: #f5fee7;
@@ -1128,6 +1232,10 @@ ul {
   border-bottom: 1px solid var(--color-neutral-300);
 }
 
+.border-b-2 {
+  border-bottom: 2px solid var(--color-neutral-300);
+}
+
 .border-b-p {
   border-bottom: 1px solid var(--color-primary-400);
 }
@@ -1175,6 +1283,10 @@ ul {
 
 .text-c-7 {
   color: var(--color-danger-300);
+}
+
+.text-c-8 {
+  color: var(--color-neutral-300);
 }
 
 .bg-c-1 {
@@ -1450,6 +1562,11 @@ ul {
 .py-12 {
   padding-top: 12px;
   padding-bottom: 12px;
+}
+
+.py-13 {
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .py-16 {
